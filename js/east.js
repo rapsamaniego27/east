@@ -83,7 +83,7 @@ East.prototype.setDefaultClasses = function(sliderEl){
  sliderEl.firstElementChild.classList.add('east-track');
 };
 
-
+/* For creating key event listeners */
 /* window.addEventListener('keyup', function (e) {
  if (e.key === 'ArrowRight') {
   dogSlider.move();
