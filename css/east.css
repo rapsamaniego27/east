@@ -1,5 +1,11 @@
 /* Plugin CSS */
 
+/* Parent Container */
+.east-row{
+ position:relative;
+ width:100%;
+}
+
 /* This element will always be 100% of its slider container */
 .east-track{
   width:100%;
@@ -8,21 +14,16 @@
   position: relative;
 }
 
+/* Default styling of a slide */
 .east-slide {
   position: absolute;
-  background:#D0007A;
   height: 100%;
   width: 100%;
-  display: grid;
-  align-content: center;
-  justify-content: center;
-  color: white;
-  font-size: 100px;
-  font-family: sans-serif;
-  border: 5px solid white;
   transition: all .25s;
   transform: translateX(-200%);
 }
+
+/* The slide positions */
 
 .east-slide.east--next + .east-slide {
   transform: translateX(200%);

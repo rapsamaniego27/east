@@ -79,7 +79,7 @@ East.prototype.bindControls = function(prevEl, nextEl){
 
 /* Sets the classes for Track and Container */
 East.prototype.setDefaultClasses = function(sliderEl){
- sliderEl.classList.add('east-container');
+ sliderEl.classList.add('east-row');
  sliderEl.firstElementChild.classList.add('east-track');
 };
 

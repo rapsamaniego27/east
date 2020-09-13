@@ -1,16 +1,79 @@
 /* Custom Styling to Slides */
 .slider-container{
-  max-width: 800px;
-  height: 500px;
+  max-width:800px;
+  height:auto;
+  margin:0 auto;
+}
+
+.slider-row{
+  height:400px;
   margin: 0 auto;
   border:2px solid black;
-  
+}
+
+.slide{
+  background:#D0007A;
+  font-size: 100px;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: 5px solid white;
 }
 
 .controls {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
-  gap: 2rem;
+  display: flex;
+  justify-content: space-around;
+  max-width: 600px;
+  align-items: center;
+  margin:20px auto;
+}
+
+
+/* Catalogue styling */
+.catalogue-container{
+  max-width: 500px;
+  height: auto;
+  margin:0 auto;
+}
+
+.catalogue-row{
+  height:200px;
+  display:block;
+}
+
+.catalogue-slide{
+  background:teal;
+  font-size: 100px;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  padding: 2rem;
+  color: white;
+  border: 5px solid white;
+}
+
+/* Person Slider */
+
+.person-container{
+  max-width: 150px;
+  height: auto;
+  margin:0 auto;
+}
+
+.person-row{
+  height:150px;
+  display:block;
+}
+
+.person-slide{
+  background:orange;
+  font-size: 100px;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: 5px solid white;
 }
