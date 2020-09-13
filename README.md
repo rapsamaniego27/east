@@ -7,6 +7,8 @@
 This library is inspired by Wes' technique of creating sliders from his Beginner Javascript course.
 So I decided to refactor the code and made it as customizable as it can be.
 
+[Demo here](https://rapsamaniego27.github.io/east/)
+
 ## Getting Started
 
 There are 5 important elements to understand:
