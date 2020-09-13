@@ -1,0 +1,16 @@
+/* Custom Styling to Slides */
+.slider-container{
+  max-width: 800px;
+  height: 500px;
+  margin: 0 auto;
+  border:2px solid black;
+  
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+}

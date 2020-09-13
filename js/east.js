@@ -5,20 +5,22 @@ function East({sliderEl, controls}) {
  /* Destructured controls object */
  const {prevEl, nextEl} = controls;
  
- if (!(sliderEl instanceof Element)) {
-  throw new Error('No slider is passed in');
+ /* Verifies if slider element exists or is an element */
+ if ((sliderEl instanceof Element) && sliderEl) {
+  this.setDefaultClasses(sliderEl);
+
+  // select the elements needed for the sliderEl
+  this.slides = sliderEl.querySelector('.east-track');
+  this.slidesChildren = Array.from(this.slides.children);
+  this.east = sliderEl;
+
+  // when this sliderEl is created, run the start sliderEl function
+  this.startSlider();
+  this.applyClasses();
+  this.bindControls(prevEl, nextEl);
+ }else{
+  console.error('No slider is passed in');
  }
-
- // select the elements needed for the sliderEl
- this.slides = sliderEl.querySelector('.slides');
- this.slidesChildren = Array.from(this.slides.children);
- this.east = sliderEl;
-
-
- // when this sliderEl is created, run the start sliderEl function
- this.startSlider();
- this.applyClasses();
- this.bindControls(prevEl, nextEl);
 
 }
 
@@ -39,7 +41,6 @@ East.prototype.applyClasses = function () {
  this.current.classList.add('east--current');
  this.prev.classList.add('east--prev');
  this.next.classList.add('east--next');
-
 
 };
 
@@ -74,7 +75,13 @@ East.prototype.bindControls = function(prevEl, nextEl){
  // Event listeners
  prevEl.addEventListener('click', () => this.move('back'));
  nextEl.addEventListener('click', () => this.move());
-}
+};
+
+/* Sets the classes for Track and Container */
+East.prototype.setDefaultClasses = function(sliderEl){
+ sliderEl.classList.add('east-container');
+ sliderEl.firstElementChild.classList.add('east-track');
+};
 
 
 /* window.addEventListener('keyup', function (e) {

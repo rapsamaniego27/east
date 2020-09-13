@@ -1,5 +1,5 @@
 const mySlider = new East({
- sliderEl: document.querySelector('.slider'),
+ sliderEl: document.querySelector('.slider-container'),
 
  controls:{
   prevEl: document.querySelector('.goToPrev'),
