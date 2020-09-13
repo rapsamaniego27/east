@@ -19,16 +19,16 @@ There are 5 important elements to understand:
 As you read through this, we will be giving a sample on how this will constructed from CSS, HTML up to Javascript.
 
 ### Installation
-First is we install the CSS and JS.
+First is we install the CSS and JS. You can also get the local files from the repo.
 
 It's not on NPM yet, but you can install the css and js files from the repo source. 
 ```HTML
 <!-- CSS installed on the head tags -->
-<link rel="stylesheet" href="https://github.com/rapsamaniego27/dulas/blob/master/css/dulas.css">
+<link rel="stylesheet" href="https://raw.githubusercontent.com/rapsamaniego27/east/master/css/east.css">
 
 
 <!-- Javascript installed in the bottom -->
-<script src="https://raw.githubusercontent.com/rapsamaniego27/dulas/master/js/dulas.js" defer></script>
+<script src="https://raw.githubusercontent.com/rapsamaniego27/east/master/js/east.js" defer></script>
 ```
 
 
